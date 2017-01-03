@@ -1,0 +1,25 @@
+{
+  "name": "jquery-flux",
+  "version": "1.0.0",
+  "description": "its provides flux as jquery plugin",
+  "main": "jquery-flux.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "uglify": "./node_modules/.bin/uglifyjs jquery-flux.js -m -o jquery-flux.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mugi-uno/jquery-flux.git"
+  },
+  "author": "mugi_uno",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mugi-uno/jquery-flux/issues"
+  },
+  "homepage": "https://github.com/mugi-uno/jquery-flux#readme",
+  "devDependencies": {
+    "uglify-js": "^2.7.5"
+  }
+}
