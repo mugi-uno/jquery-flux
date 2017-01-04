@@ -15,14 +15,11 @@ This includes only minimal implementation. Please customize it freely and use it
 
 ## Usage
 
-1. Create container
-
+### Create container
 ```html
 <div class="container"></div>
 ```
-
-2. Activate
-
+### Activate
 ```js
 var dispatcher = function(store, payload) {
   switch(payload.type) {
@@ -37,9 +34,7 @@ var dispatcher = function(store, payload) {
 
 $(".container").flux(dispatcher);
 ```
-
-3. Event handling
-
+### Event handling
 ```js
 var actionCreator = function(store) {
   return {
@@ -50,9 +45,7 @@ var actionCreator = function(store) {
 
 $(".button").on("click", function() { container.dispatch(actionCreator) });
 ```
-
-4. Render DOM
-
+### Render DOM
 ```js
 var render = function(e, prevStore, store) {
   $(".counter").text(store.value);
